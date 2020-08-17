@@ -1,7 +1,7 @@
 # Automatic RoamResearch backup
 
-[![Roam Research backup](https://github.com/MatthieuBizien/roam-to-git-demo/workflows/Roam%20Research%20backup/badge.svg)](https://github.com/MatthieuBizien/roam-to-git-demo/actions)
-[![roam-to-git tests.py](https://github.com/MatthieuBizien/roam-to-git/workflows/roam-to-git%20tests.py/badge.svg)](https://github.com/MatthieuBizien/roam-to-git/actions)
+[![Roam Research backup](https://github.com/twd-0004/roam-to-git-demo/workflows/Roam%20Research%20backup/badge.svg)](https://github.com/twd-0004/roam-to-git-demo/actions)
+[![roam-to-git tests.py](https://github.com/twd-0004/roam-to-git/workflows/roam-to-git%20tests.py/badge.svg)](https://github.com/twd-0004/roam-to-git/actions)
 
 This script help you backup your [RoamResearch](https://roamresearch.com/)!
 
@@ -12,7 +12,7 @@ This script automatically
 - Commit and push the difference
 
 # Demo
-[See it in action!](https://github.com/MatthieuBizien/roam-to-git-demo). That repo is updated using roam-to-git.
+[See it in action!](https://github.com/twd-0004/roam-to-git-demo). That repo is updated using roam-to-git.
 
 # Why to use it
 
@@ -52,7 +52,7 @@ Add 3 (separate) secrets where the names are
 ```
 cd notes
 mkdir -p .github/workflows/
-curl https://raw.githubusercontent.com/MatthieuBizien/roam-to-git-demo/master/.github/workflows/main.yml > \
+curl https://raw.githubusercontent.com/twd-0004/roam-to-git-demo/master/.github/workflows/main.yml > \
     .github/workflows/main.yml
 git add .github/workflows/main.yml
 git commit -m "Add github/workflows/main.yml"
@@ -78,7 +78,7 @@ cases
 With [pipx](https://github.com/pipxproject/pipx) 
 (if you don't know pipx, you should look at it, it's wonderful!)
 
-`pipx install git+https://github.com/MatthieuBizien/roam-to-git.git`
+`pipx install git+https://github.com/twd-0004/roam-to-git.git`
 
 ## Create a (private) Github repository for all your notes
 
@@ -90,7 +90,7 @@ Then run `git push --set-upstream origin master`
 
 ## Configure environment variables
 
-- `curl https://raw.githubusercontent.com/MatthieuBizien/roam-to-git/master/env.template > notes/.env`
+- `curl https://raw.githubusercontent.com/twd-0004/roam-to-git/master/env.template > notes/.env`
 - Fill the .env file: `vi .env`
 - Ignore it: `echo .env > notes/.gitignore; cd notes; git add .gitignore; git commit -m "Initial commit"`
 
@@ -144,4 +144,4 @@ One-liner to run it with a [cron](https://en.wikipedia.org/wiki/Cron) every hour
 ## Some ideas, I don't need it, but PR welcome 😀
 - [ ] Test it/make it work on Windows
 - [x] Pre-configure a CI server so it can run every hour without a computer
-    Thanks @Stvad for [#4](https://github.com/MatthieuBizien/roam-to-git/issues/4)!
+    Thanks @Stvad for [#4](https://github.com/twd-0004/roam-to-git/issues/4)!
